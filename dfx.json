@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "asset_storage_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/asset_storage_backend/main.mo",
+      "type": "motoko"
+    },
+    "asset_storage_frontend": {
+      "dependencies": [
+        "asset_storage_backend"
+      ],
+      "source": [
+        "src/asset_storage_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "asset_storage_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

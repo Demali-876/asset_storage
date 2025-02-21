@@ -1,0 +1,3 @@
+[dependencies]
+base = "0.13.4"
+assets = "0.2.2"

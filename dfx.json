@@ -7,6 +7,17 @@
       "main": "src/asset_storage_backend/main.mo",
       "type": "motoko"
     },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
     "asset_storage_frontend": {
       "dependencies": [
         "asset_storage_backend"
@@ -21,7 +32,7 @@
   "defaults": {
     "build": {
       "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",

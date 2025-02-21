@@ -1,4 +1,4 @@
-import { createActor, canisterId } from 'declarations/asset_storage_backend';
+import { createActor, canisterId } from 'declarations/asset_storage_frontend';
 import { building } from '$app/environment';
 
 function dummyActor() {
@@ -7,6 +7,6 @@ function dummyActor() {
 
 const buildingOrTesting = building || process.env.NODE_ENV === "test";
 
-export const backend = buildingOrTesting
+export const frontend = buildingOrTesting
     ? dummyActor()
     : createActor(canisterId);

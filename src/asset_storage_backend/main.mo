@@ -1,3 +1,5 @@
+//This assets library in motoko is not actively mantained and as such it is not recommended to use this library.
+
 import Assets "mo:assets";
 import Principal "mo:base/Principal";
 import Array "mo:base/Array";

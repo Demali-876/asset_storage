@@ -55,7 +55,7 @@ async function handleAuthenticated(identity) {
         assetManager = new AssetManager({
             canisterId: ASSET_CANISTER_ID,
             agent,
-            
+            // Max size must not exceed 2MB
             maxChunkSize: 1900000,
         });
 

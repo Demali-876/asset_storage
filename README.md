@@ -1,4 +1,4 @@
-# `asset_storage`
+# Asset storage
 
 ## Overview
 
